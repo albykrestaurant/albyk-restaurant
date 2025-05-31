@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ALBYK Restaurant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #d62828;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #f4f4f4;
+      padding: 10px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #d62828;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #d62828;
+      margin-bottom: 20px;
+    }
+    .menu-item {
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    .contact-info {
+      margin-top: 10px;
+    }
+    .reservation-form input, .reservation-form button {
+      padding: 10px;
+      margin: 5px 0;
+      width: 100%;
+      max-width: 300px;
+      box-sizing: border-box;
+    }
+    .reservation-form button {
+      background: #d62828;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .reservation-form button:hover {
+      background: #b22222;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ALBYK Restaurant</h1>
+  <p>Delicious meals served fresh every day</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#menu">Menu</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="#reservation">Reservation</a>
+</nav>
+
+<section id="home">
+  <h2>Welcome to ALBYK</h2>
+  <p>Experience the best flavors with our wide variety of dishes. Fresh ingredients, great service, and a cozy atmosphere await you!</p>
+</section>
+
+<section id="menu">
+  <h2>Our Menu</h2>
+  <div class="menu-item"><strong>Jollof Rice</strong> — ₵25</div>
+  <div class="menu-item"><strong>Fried Chicken</strong> — ₵30</div>
+  <div class="menu-item"><strong>Pizza</strong> — ₵40</div>
+  <div class="menu-item"><strong>Soft Drinks (1L)</strong> — ₵15</div>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>ALBYK Restaurant has been serving the community with quality meals since [year]. Our goal is to deliver delicious food made from the freshest ingredients and provide excellent customer service.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Phone: 0243630006 / 0555927250</p>
+  <p>Email: info@albykrestaurant.com</p>
+  <div class="contact-info">
+    <p>Address: [Your restaurant's physical address]</p>
+  </div>
+</section>
+
+<section id="reservation">
+  <h2>Make a Reservation</h2>
+  <form class="reservation-form" action="mailto:info@albykrestaurant.com" method="POST" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="tel" name="phone" placeholder="Phone Number" required />
+    <input type="date" name="date" required />
+    <input type="time" name="time" required />
+    <button type="submit">Book Now</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 ALBYK Restaurant. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
